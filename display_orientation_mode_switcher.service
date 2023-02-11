@@ -1,0 +1,14 @@
+[Unit]
+Description=Handler of display orientation additional configuration change
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/share/display_orientation_mode_switcher-driver/display_orientation_mode_switcher.sh
+StandardInput=tty-force
+StandardOutput=append:/var/log/display_orientation_mode_switcher-driver/error.log
+StandardError=append:/var/log/display_orientation_mode_switcher-driver/error.log
+TimeoutSec=5
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
