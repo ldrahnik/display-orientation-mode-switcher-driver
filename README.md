@@ -5,9 +5,6 @@
 
 If you find this project useful, do not forget to give it a [![GitHub stars](https://img.shields.io/github/stars/ldrahnik/display-orientation-mode-switcher-driver.svg?style=social&label=Star&maxAge=2592000)](https://github.com/ldrahnik/display-orientation-mode-switcher/stargazers) People already did!
 
-## Features
-
-## Layouts
 
 ## Installation
 
@@ -26,3 +23,15 @@ And to uninstall, just run:
 ```bash
 sudo ./uninstall.sh
 ```
+## Customization
+
+- Bottom-up `conf/bottom_up.sh`
+- Top-left `conf/top_left.sh`
+- Top-right `conf/top_right.sh`
+- Normal `conf/normal.sh`
+
+## Existing similar projects
+
+- [bash] https://gist.github.com/ACamposPT/6794aa02a6e5e341f123d447b3645b93 **This project is based on**
+
+**Why was this project created?** Easy installation/uninstallation.
