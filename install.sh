@@ -38,7 +38,7 @@ for CONF_FILE in conf/*.sh; do
             read -r -p "Overwrite existing config script for mode $CONF_FILE? [y/N]" response
             case "$response" in [yY][eE][sS]|[yY])
                 echo "Replaced existing config file for mode $CONF_FILE with default one."
-                cp $CONF_FILE $INSTALLED_DRIVER_DIR/conf
+                cp $CONF_FILE $DRIVER_INSTALL_DIR/conf
                 ;;
             *)
                 echo "Used existing config file for mode $CONF_FILE."
@@ -49,7 +49,7 @@ for CONF_FILE in conf/*.sh; do
         fi
     else
         echo "Not existing config file for mode $CONF_FILE. Used default one."
-        cp $CONF_FILE $INSTALLED_DRIVER_DIR/conf
+        cp $CONF_FILE $DRIVER_INSTALL_DIR/conf
     fi
     echo "For futher editing is here: $DRIVER_INSTALLED_CONF_FILE"
     chmod +x $DRIVER_INSTALLED_CONF_FILE
